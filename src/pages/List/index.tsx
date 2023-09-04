@@ -1,7 +1,12 @@
+import SearchBar from "../../components/SearchBar";
 import "./styles/index.css";
 
 function List() {
-  return <div></div>;
+  return (
+    <div>
+      <SearchBar />
+    </div>
+  );
 }
 
 export default List;
