@@ -1,8 +1,16 @@
 import { User } from "../../types";
 import "./styles/index.css";
+import { format } from "date-fns";
+import ptBR from "date-fns/locale/pt-BR";
 
 interface UsersTableProps {
   users: User[];
+}
+
+export function formatToDate(date: string) {
+  const generatedDate = new Date(date);
+
+  return format(generatedDate, "dd/MM/yyyy");
 }
 
 function UsersTable({ users }: UsersTableProps) {
@@ -25,7 +33,7 @@ function UsersTable({ users }: UsersTableProps) {
               <p className="table-column">{user.name.first}</p>
               <p className="table-column">{user.name.last}</p>
               <p className="table-column">{user.name.title}</p>
-              <p className="table-column">{user.dob.date}</p>
+              <p className="table-column">{formatToDate(user.dob.date)}</p>
               <p className="table-column">{user.dob.age}</p>
               <p className="table-column purple">View profile</p>
             </div>
