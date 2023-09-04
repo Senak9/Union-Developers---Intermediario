@@ -1,0 +1,33 @@
+.container-table {
+  min-height: 50rem;
+  width: 100%;
+  min-width: 80rem;
+}
+
+.table-column {
+  text-align: center;
+  width: 14%;
+}
+
+.table-head {
+  height: 4.3rem;
+  width: 100%;
+  background-color: #811ac0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.table-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.3rem;
+  border-bottom: 0.1rem solid #212121;
+}/*# sourceMappingURL=index.css.map */
