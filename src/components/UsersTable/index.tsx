@@ -1,6 +1,11 @@
+import { User } from "../../types";
 import "./styles/index.css";
 
-function UsersTable() {
+interface UsersTableProps {
+  users: User[];
+}
+
+function UsersTable({ users }: UsersTableProps) {
   return (
     <div className="container-table">
       <div className="table-head">
@@ -13,24 +18,19 @@ function UsersTable() {
         <h3 className="table-column">Actions</h3>
       </div>
       <div className="table-body">
-        <div className="table-row">
-          <p className="table-column">ID</p>
-          <p className="table-column">First Name</p>
-          <p className="table-column">Last Name</p>
-          <p className="table-column">Title</p>
-          <p className="table-column">Date</p>
-          <p className="table-column">Age</p>
-          <p className="table-column">Actions</p>
-        </div>
-        <div className="table-row">
-          <p className="table-column">ID</p>
-          <p className="table-column">First Name</p>
-          <p className="table-column">Last Name</p>
-          <p className="table-column">Title</p>
-          <p className="table-column">Date</p>
-          <p className="table-column">Age</p>
-          <p className="table-column">Actions</p>
-        </div>
+        {users.map((user: User) => {
+          return (
+            <div className="table-row">
+              <p className="table-column">{user.id.name}</p>
+              <p className="table-column">{user.name.first}</p>
+              <p className="table-column">{user.name.last}</p>
+              <p className="table-column">{user.name.title}</p>
+              <p className="table-column">{user.dob.date}</p>
+              <p className="table-column">{user.dob.age}</p>
+              <p className="table-column">Actions</p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
