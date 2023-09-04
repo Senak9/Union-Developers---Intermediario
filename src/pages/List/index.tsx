@@ -17,7 +17,7 @@ function List() {
 
   console.log("olha aqui,", data?.data);
   return (
-    <div>
+    <div className="container-list">
       <SearchBar />
       {data && <UsersTable users={data?.data.results} />}
       <Pagination

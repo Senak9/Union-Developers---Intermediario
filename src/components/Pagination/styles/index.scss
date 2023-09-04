@@ -2,7 +2,12 @@
 
 .container-pagination {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  .button {
+    display: flex;
+    width: 70.4rem;
+    justify-content: space-between;
+  }
   button {
     width: 8rem;
     height: 8rem;

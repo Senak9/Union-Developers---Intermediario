@@ -1,0 +1,12 @@
+.container-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 11.3rem 4.1rem 15.1rem 6.9rem;
+  .container-search {
+    margin-bottom: 6.4rem;
+  }
+  .container-table {
+    margin-bottom: 9rem;
+  }
+}

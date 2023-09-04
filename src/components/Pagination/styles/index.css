@@ -1,5 +1,10 @@
 .container-pagination {
   display: flex;
+  justify-content: center;
+}
+.container-pagination .button {
+  display: flex;
+  width: 70.4rem;
   justify-content: space-between;
 }
 .container-pagination button {
