@@ -1,4 +1,4 @@
-import "./styles.sass";
+import "./styles/index.css";
 
 function List() {
   return <div></div>;
