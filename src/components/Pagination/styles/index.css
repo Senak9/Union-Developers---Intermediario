@@ -21,4 +21,7 @@
 }
 .container-pagination button:hover {
   background-color: #811ac0;
+}
+.container-pagination button:active {
+  background-color: #811ac0;
 }/*# sourceMappingURL=index.css.map */
