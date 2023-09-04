@@ -27,7 +27,7 @@ function UsersTable({ users }: UsersTableProps) {
               <p className="table-column">{user.name.title}</p>
               <p className="table-column">{user.dob.date}</p>
               <p className="table-column">{user.dob.age}</p>
-              <p className="table-column">Actions</p>
+              <p className="table-column purple">View profile</p>
             </div>
           );
         })}

@@ -4,34 +4,35 @@
   min-height: 50rem;
   width: 100%;
   min-width: 80rem;
-}
+  .table-column {
+    text-align: center;
+    width: 14%;
+    padding: 2.5rem 3rem;
+  }
+  .purple {
+    color: $secondary;
+  }
+  .table-head {
+    // height: 133rem;
+    height: 4.3rem;
+    width: 100%;
+    background-color: $secondary;
 
-.table-column {
-  text-align: center;
-  width: 14%;
-}
-.table-head {
-  // height: 133rem;
-  height: 4.3rem;
-  width: 100%;
-  background-color: $secondary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .table-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .table-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.table-body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.table-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  height: 4.3rem;
-  border-bottom: 0.1rem solid $line;
+      height: 4.3rem;
+      border-bottom: 0.1rem solid $line;
+    }
+  }
 }

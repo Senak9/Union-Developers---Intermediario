@@ -11,11 +11,12 @@ function List() {
   const { data } = useQuery(["getUsers", page], () => {
     return api.get(`/?page=${page}&results=10`);
   });
+
   console.log("olha aqui,", data?.data);
   return (
     <div>
       <SearchBar />
-      <UsersTable users={data?.data.results} />
+      {data && <UsersTable users={data?.data.results} />}
     </div>
   );
 }
