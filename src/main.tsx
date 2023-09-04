@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import "./index.css";
+import "./stlyes/index.css";
 import { BrowserRouter } from "react-router-dom";
 import MainRoutes from "./routes";
 
