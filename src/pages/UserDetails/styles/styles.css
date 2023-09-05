@@ -1,0 +1,10 @@
+.container-userDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container-userDetails .header-content {
+  height: 36.2rem;
+  width: 100%;
+  border-bottom: 1px solid #2d2b2b;
+}/*# sourceMappingURL=styles.css.map */

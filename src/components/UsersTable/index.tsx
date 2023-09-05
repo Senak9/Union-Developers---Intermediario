@@ -5,6 +5,7 @@ import { format } from "date-fns";
 
 interface UsersTableProps {
   users: User[];
+  page: number;
 }
 
 export function formatToDate(date: string) {
@@ -13,7 +14,7 @@ export function formatToDate(date: string) {
   return format(generatedDate, "dd/MM/yyyy");
 }
 
-function UsersTable({ users }: UsersTableProps) {
+function UsersTable({ users, page }: UsersTableProps) {
   const navigate = useNavigate();
   return (
     <div className="container-table">
@@ -27,7 +28,7 @@ function UsersTable({ users }: UsersTableProps) {
         <h3 className="table-column">Actions</h3>
       </div>
       <div className="table-body">
-        {users.map((user: User) => {
+        {users.map((user: User, index: number) => {
           return (
             <div className="table-row">
               <p className="table-column">{user.id.name}</p>
@@ -38,7 +39,7 @@ function UsersTable({ users }: UsersTableProps) {
               <p className="table-column">{user.dob.age}</p>
               <p
                 className="table-column purple"
-                onClick={() => navigate("/details")}
+                onClick={() => navigate(`/details/${index + 1}/${page}`)}
               >
                 View profile
               </p>

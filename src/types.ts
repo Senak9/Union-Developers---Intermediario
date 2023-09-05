@@ -11,6 +11,11 @@ export type User = {
     last: string;
     title: string;
   };
+  picture: {
+    large: string;
+    medium: string;
+    thumbnail: string;
+  };
   email: string;
   gender: string;
   phone: string;

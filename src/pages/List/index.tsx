@@ -15,11 +15,10 @@ function List() {
 
   const [offset, setOffset] = useState<number>(0);
 
-  console.log("olha aqui,", data?.data);
   return (
     <div className="container-list">
       <SearchBar />
-      {data && <UsersTable users={data?.data.results} />}
+      {data && <UsersTable users={data?.data.results} page={page} />}
       <Pagination
         page={page}
         total={120}
