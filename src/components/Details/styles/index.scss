@@ -1,0 +1,23 @@
+@import "../../../styles/var.scss";
+.container-detalis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 3rem;
+  .header-detalis {
+    display: flex;
+    .box-detalis {
+      width: 15.9rem;
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      h2 {
+        font-size: 2.4rem;
+        font-weight: 500;
+        text-align: center;
+        line-height: 2.8rem;
+      }
+    }
+  }
+}

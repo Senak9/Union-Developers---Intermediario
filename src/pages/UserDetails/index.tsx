@@ -3,6 +3,7 @@ import api from "../../services/api";
 import { useQuery } from "react-query";
 import { useParams } from "react-router-dom";
 import Photo from "../../components/Photo";
+import Details from "../../components/Details";
 
 function UserDetails() {
   const params = useParams();
@@ -24,8 +25,15 @@ function UserDetails() {
           />
         )}
       </div>
-      <div></div>
-      dddd
+      <div className="details-content">
+        {data && (
+          <Details
+            users={data?.data.results}
+            page={Number(page)}
+            index={Number(index)}
+          />
+        )}
+      </div>
     </div>
   );
 }

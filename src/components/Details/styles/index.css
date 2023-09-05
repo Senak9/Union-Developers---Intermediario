@@ -1,0 +1,22 @@
+.container-detalis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 3rem;
+}
+.container-detalis .header-detalis {
+  display: flex;
+}
+.container-detalis .header-detalis .box-detalis {
+  width: 15.9rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.container-detalis .header-detalis .box-detalis h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 2.8rem;
+}/*# sourceMappingURL=index.css.map */

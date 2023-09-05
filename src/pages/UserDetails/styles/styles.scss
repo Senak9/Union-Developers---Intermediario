@@ -4,10 +4,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   .header-content {
     height: 36.2rem;
     width: 100%;
     border-bottom: 1px solid $line2;
+  }
+  .details-content {
+    height: 75.1rem;
+    width: 100%;
   }
 }
