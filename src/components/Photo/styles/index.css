@@ -9,4 +9,12 @@
   width: 15rem;
   height: 15rem;
   border-radius: 100%;
+  padding: 0.3rem;
+}
+.container-photo h2 {
+  padding: 0.3rem;
+}
+.container-photo .title-photo {
+  font-size: 2.4rem;
+  font-weight: 400;
 }/*# sourceMappingURL=index.css.map */

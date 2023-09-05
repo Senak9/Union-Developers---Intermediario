@@ -15,7 +15,7 @@ function Photo({ users, page, index }: PhotoProps) {
       <h2>
         {users[index - 1]?.name?.first} {users[index - 1]?.name?.last}
       </h2>
-      <h2>{users[index - 1]?.name?.title}</h2>
+      <h2 className="title-photo">{users[index - 1]?.name?.title}</h2>
     </div>
   );
 }
