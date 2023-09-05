@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import List from "./pages/List";
-import UserDetails from "./pages/UserDetails";
+import UserDetails from "./components/UserDetails";
 
 function MainRoutes() {
   return (
