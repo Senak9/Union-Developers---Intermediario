@@ -1,0 +1,12 @@
+.container-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container-photo img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+}/*# sourceMappingURL=index.css.map */
