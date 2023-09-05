@@ -1,7 +1,7 @@
+import { useNavigate } from "react-router-dom";
 import { User } from "../../types";
 import "./styles/index.css";
 import { format } from "date-fns";
-import ptBR from "date-fns/locale/pt-BR";
 
 interface UsersTableProps {
   users: User[];
@@ -14,6 +14,7 @@ export function formatToDate(date: string) {
 }
 
 function UsersTable({ users }: UsersTableProps) {
+  const navigate = useNavigate();
   return (
     <div className="container-table">
       <div className="table-head">
@@ -35,7 +36,12 @@ function UsersTable({ users }: UsersTableProps) {
               <p className="table-column">{user.name.title}</p>
               <p className="table-column">{formatToDate(user.dob.date)}</p>
               <p className="table-column">{user.dob.age}</p>
-              <p className="table-column purple">View profile</p>
+              <p
+                className="table-column purple"
+                onClick={() => navigate("/details")}
+              >
+                View profile
+              </p>
             </div>
           );
         })}

@@ -1,7 +1,7 @@
 import "./styles.css";
 
 function UserDetails() {
-  return <div></div>;
+  return <div>dddd</div>;
 }
 
 export default UserDetails;
